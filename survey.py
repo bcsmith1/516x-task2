@@ -6,4 +6,6 @@ file_to_open = open(sys.argv[1], 'r')
 survey = pd.read_csv(file_to_open, sep = ",", index_col=0)
 survey.head()
 print(survey.describe())
+print("Wonder what the shape is?")
+print(survey.shape)
 
